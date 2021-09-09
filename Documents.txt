@@ -1,0 +1,49 @@
+﻿Google Contacts API
+Source:
+	https://developers.google.com/contacts/v3
+	Please refer the .NET section
+-----------------------------------------------------------------------------------
+PROJECT SECTION
+Step 1:
+	Create an account for google console
+https://console.cloud.google.com/iam-admin/serviceaccounts/?pli=1
+
+Step 2:
+	Create the project. We will work with this project only
+	
+Step 3:
+	Create permission account with your mail id in IAM section against the IAM & ADMIN
+
+Step 4:
+	Create service account  in service account section against the IAM & ADMIN
+		Select the owner role in "Grant this service account access to the project"
+	
+	This will create one service account for your project
+-----------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------
+API SECTION
+Please navigate the section of "APIs and Services"
+Step 1:	 
+	before this we need configure the OAuth consent screen with basic information
+
+	Create an "OAuth Client ID"credentials against the credentials section
+
+		App type - Desktop app, since i have created class library. It based on your requirements
+
+	Save and continue
+
+Step 2:
+	Go to API dashboard -> Enable APIS and Service -> Contacts API -> Enable It.
+
+Step 3:
+	Enable Less secure app access
+	https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4NAHu6oUfOQuTCBipxBn_j4M4TeCCZx4GLTmrAvS6WRjFf3DSB2jVdNu-bi62Z1dgD2LS3zwI-sExV7KkfUa1VWVI8h_Q
+		
+	This will enable your API against your service account Emails
+-----------------------------------------------------------------------------------
+
+Lets rock it...
+
+-----------------------------------------------------------------------------------
