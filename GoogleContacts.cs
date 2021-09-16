@@ -58,8 +58,6 @@ namespace RD_GoogleContacts
             }
             catch (Exception ex)
             {
-                logger.Error($"Error Occured: {ex.ToString()}");
-
                 //Log the Exception
                 logger.Error($"Error Occured: {ex.ToString()}");
 
